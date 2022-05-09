@@ -1,0 +1,1 @@
+CREATE TABLE dept(deptno VARCHAR(10), dept_name CHAR(20))

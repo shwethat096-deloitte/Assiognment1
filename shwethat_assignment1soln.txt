@@ -1,0 +1,10 @@
+CREATE TABLE dept(deptno VARCHAR(10), dept_name CHAR(20))
+CREATE TABLE salesman(sno INT, s_name CHAR(30), start_year YEAR, deptno VARCHAR(10))
+CREATE TABLE trip(tno INT, from_city CHAR(30), to_city CHAR(20), departure_date DATE, return DATE) 
+CREATE TABLE expense(eid INT, amount MONEY)
+Insert into dept values('1','Integration Engineer')
+Insert into dept values('2','QA Engineer')
+Insert into dept values('3','Accounts')
+SELECT sno, s_name 
+from salesman, trip
+where to_city = 'Calcutta'
